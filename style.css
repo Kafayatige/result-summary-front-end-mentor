@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    font-display: swap;
+    font-weight: 100 800 900;
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') 
+         format('truetype');
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+  }
+
+
+  img,svg{
+    display: block;
+    max-width: 100%;
+  }
+
+
+  body{
+    font-style: normal;
+    font-family:'HankenGrotesk', sans-serif ;
+    font-size: 1.125rem;
+    background-color: hsla(220, 100%, 96%, 1);
+}
+
+/*"mobile-first design*/
+
+  .result-summary{
+    display: grid;
+    max-width: 46rem;
+    border-radius: 2rem;
+    padding: 2.5rem;
+  }
+
+  .grid-layout{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+  }
+
+  .your-result{
+    background: linear-gradient(to bottom, hsla(252, 100%, 67%, 1), hsla(252, 100%, 63%, 1), hsla(241, 81%, 54%, 1) );
+    color: hsla(241, 100%, 89%, 1);
+    text-align: center;
+    padding: 42px 84px;
+    border-radius:0 0 2rem 2rem;
+  }
+
+  h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .value{
+    display: grid;
+    place-content: center;
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    width: 12.5rem;
+    margin-inline: auto; /*centers the result value*/
+    aspect-ratio: 1/1; /*sets the height relative  to the width*/
+    border-radius: 50%;
+  }
+
+  .value span{
+    display: block;
+    font-size:4.5rem ;
+    font-weight:800 ;
+    line-height:4.5rem; 
+    color:#FFFFFF;
+  }
+
+  .grading{
+    color:#FFFFFF;
+    font: size 2rem;
+    font-weight:700 ;
+  }
